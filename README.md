@@ -17,7 +17,7 @@
 
 
 <h3> Installing Pycocotools</h3>
-1. Clone the repo: git clone https://github.com/waleedka/coco
+1. Clone the repo: git clone https://github.com/waleedka/coco <br>
 2. python3 PythonAPI/setup.py build_ext install 
 
 # Accuracy Calculation
