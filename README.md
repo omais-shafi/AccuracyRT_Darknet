@@ -33,6 +33,15 @@ To obtain precision and recall at some fixed IOU(say 0.75), you can edit the <b>
 1. <i> cd darknet </i>
 2. make -j 4 ( This will build all the necessary files)
 3. Do a basic test whether darknet is working fine. <i>./darknet detect yolov3-tiny-416.cfg yolov3-tiny-416.weights data/dog.jpg </i>
+Sample output from darknet
+ ![Darknet_sample](darknet.png)
+
+# Command to obtain recall
+<i> ./darknet detector recall cfg/voc.data cfg/yolov3-tiny-416.cfg yolov3-tiny-416.weights </i> (voc.data contains the paths to the training and the test dataset)
+
+
+# Command to obtain MAP
+<i> ./darknet detector map cfg/voc.data cfg/yolov3-tiny-416.cfg yolov3-tiny-416.weights </i> 
 
 
 
