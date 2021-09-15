@@ -4,10 +4,10 @@
 2. Accuracy calculation
 
 # Software Requirements 
-<b> 1. TensorRT (version preferably >= 5) </b>
-<b> 2. ONNX (sudo pip3 install onnx==1.4.1)---> The present yolo_to_onnx.py works only with version 1.4.1 of ONNX </b>
-<b> 3. Pycotools (Used to calculate the MAP) </b>
-<b> 4. Tested on Ubuntu 18.04 </b>
+<b> 1. TensorRT (version preferably >= 5) </b> <br>
+<b> 2. ONNX (sudo pip3 install onnx==1.4.1)---> The present yolo_to_onnx.py works only with version 1.4.1 of ONNX </b> <br>
+<b> 3. Pycotools (Used to calculate the MAP) </b> <br>
+<b> 4. Tested on Ubuntu 18.04 </b> <br>
 
 # Steps to create the TensorRT engine
 1. Go to <i>cd tensorrt_accuracy/yolo </i>
