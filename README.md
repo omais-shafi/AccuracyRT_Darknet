@@ -16,6 +16,10 @@
 4. This will generate the model with trt extension.<br>
 
 
+# Installing Pycocotools
+1. Clone the repo: git clone https://github.com/waleedka/coco
+2. python3 PythonAPI/setup.py build_ext install 
+
 # Accuracy Calculation
 1. Open eval_yolo.py inside the directory tensorrt_accuracy. <br>
 2. Give the path to the image dataset along with the annotations in json format(format attached in the folder).<br>
