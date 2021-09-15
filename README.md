@@ -16,7 +16,7 @@
 4. This will generate the model with trt extension.<br>
 
 
-<h3> Accuracy Calculation</h3>
+# Accuracy Calculation
 1. Open eval_yolo.py inside the directory tensorrt_accuracy. <br>
 2. Give the path to the image dataset along with the annotations in json format(format attached in the folder).<br>
 3. Run <i>python3 eval_yolo.py --m model</i> (Here model is either tiny-yolo or yolo. Give the name of the trt engine generated above).<br>
