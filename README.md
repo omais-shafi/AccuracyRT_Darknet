@@ -31,7 +31,7 @@ To obtain precision and recall at some fixed IOU(say 0.75), you can edit the <b>
 
 # Steps to obtain the accuracy from Darknet
 1. <i> cd darknet </i>
-2. make -j 4 ( This will build all the necessary files)
+2. <i> make -j 4 </i> ( This will build all the necessary files)
 3. Do a basic test whether darknet is working fine. <i>./darknet detect yolov3-tiny-416.cfg yolov3-tiny-416.weights data/dog.jpg </i> 
  ![Darknet_sample](darknetsampleout.png)
 
