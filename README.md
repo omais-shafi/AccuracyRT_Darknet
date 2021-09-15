@@ -29,7 +29,7 @@
 To obtain precision and recall at some fixed IOU(say 0.75), you can edit the <b>cocoeval.py</b> (Edit function Summarize in the file) file present in the system as pycocotools is installed. <i>cocoeval.py</i> is present at the location <i> ~/coco/PythonAPI/pycocotools/cocoeval.py</i> (Assuming the pycocotools is installed in the home directory)
 
 
-# Steps to obtain the accuracy from Darknet
+# Steps to obtain the accuracy for Darknet Models
 1. <i> cd darknet </i>
 2. <i> make -j 4 </i> ( This will build all the necessary files)
 3. Do a basic test whether darknet is working fine. <i>./darknet detect yolov3-tiny-416.cfg yolov3-tiny-416.weights data/dog.jpg </i> 
