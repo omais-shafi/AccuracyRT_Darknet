@@ -1,13 +1,13 @@
 
 # Steps to obtain the accuracy for TensorRT engines
-1. TensorRT engine creation
-2. Accuracy calculation
+* TensorRT engine creation
+* Accuracy calculation
 
 # Software Requirements 
-<b> 1. TensorRT (version preferably >= 5) </b> <br>
-<b> 2. ONNX (sudo pip3 install onnx==1.4.1)---> The present yolo_to_onnx.py works only with version 1.4.1 of ONNX </b> <br>
-<b> 3. Pycotools (Used to calculate the MAP) </b> <br>
-<b> 4. Tested on Ubuntu 18.04 and Python3 </b> <br>
+<b> * TensorRT (version preferably >= 5) </b> <br>
+<b> * ONNX (sudo pip3 install onnx==1.4.1)---> The present yolo_to_onnx.py works only with version 1.4.1 of ONNX </b> <br>
+<b> * Pycotools (Used to calculate the MAP) </b> <br>
+<b> * Tested on Ubuntu 18.04 and Python3 </b> <br>
 
 # Steps to create the TensorRT engine
 1. Go to <i>cd tensorrt_accuracy/yolo </i>
@@ -26,7 +26,7 @@
 5. Note that in order to get the precision and recall for individual classes, you need to specify the class in the code (<b>Line no 120 of eval_yolo.py</b>). This is the link to the code(https://github.com/cocodataset/cocoapi/blob/master/PythonAPI/pycocotools/cocoeval.py)
 
 # Additional Changes needed:
-To obtain precision and recall at some fixed IOU(say 0.75), you can edit the <b>cocoeval.py</b> (Edit function Summarize in the file) file present in the system as pycocotools is installed. <i>cocoeval.py</i> is present at the location <i> ~/coco/PythonAPI/pycocotools/cocoeval.py</i> (Assuming the pycocotools is installed in the home directory)
+* To obtain precision and recall at some fixed IOU(say 0.75), you can edit the <b>cocoeval.py</b> (Edit function Summarize in the file) file present in the system as pycocotools is installed. <i>cocoeval.py</i> is present at the location <i> ~/coco/PythonAPI/pycocotools/cocoeval.py</i> (Assuming the pycocotools is installed in the home directory)
 
 
 # Steps to obtain the accuracy for Darknet Models
