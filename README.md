@@ -7,7 +7,7 @@
 1. TensorRT (version preferably >= 5)
 2. ONNX (sudo pip3 install onnx==1.4.1)---> The present yolo_to_onnx.py works only with version 1.4.1 of ONNX
 3. Pycotools (Used to calculate the MAP)
-
+4. Tested on Ubuntu 18.04
 
 # Steps to create the TensorRT engine
 1. Go to <i>cd tensorrt_accuracy/yolo </i>
@@ -37,11 +37,11 @@ Sample output from darknet
  ![Darknet_sample](darknet.png)
 
 # Command to obtain recall
-<i> ./darknet detector recall cfg/voc.data cfg/yolov3-tiny-416.cfg yolov3-tiny-416.weights </i> (voc.data contains the paths to the training and the test dataset)
+ ** <i> ./darknet detector recall cfg/voc.data cfg/yolov3-tiny-416.cfg yolov3-tiny-416.weights </i> (voc.data contains the paths to the training and the test dataset)
 
 
 # Command to obtain MAP
-<i> ./darknet detector map cfg/voc.data cfg/yolov3-tiny-416.cfg yolov3-tiny-416.weights </i> 
+** <i> ./darknet detector map cfg/voc.data cfg/yolov3-tiny-416.cfg yolov3-tiny-416.weights </i> 
 
 
 
