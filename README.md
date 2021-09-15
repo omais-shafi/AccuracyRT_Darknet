@@ -16,7 +16,7 @@
 4. This will generate the model with trt extension.<br>
 
 
-# Installing Pycocotools
+<h3> Installing Pycocotools</h3>
 1. Clone the repo: git clone https://github.com/waleedka/coco
 2. python3 PythonAPI/setup.py build_ext install 
 
