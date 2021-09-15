@@ -36,15 +36,13 @@ To obtain precision and recall at some fixed IOU(say 0.75), you can edit the <b>
  ![Darknet_sample](darknetsampleout.png)
 
 # Command to obtain recall 
----->  <i> ./darknet detector recall cfg/voc.data cfg/yolov3-tiny-416.cfg yolov3-tiny-416.weights </i> (voc.data contains the paths to the training and the test dataset)
-
-# Contact
-For any issues related to the code, you can contact me at <i>omais.shafi@gmail.com</i>
+* ./darknet detector recall cfg/voc.data cfg/yolov3-tiny-416.cfg yolov3-tiny-416.weights (voc.data contains the paths to the training and the test dataset)
 
 
 # Command to obtain MAP
-----> <i> ./darknet detector map cfg/voc.data cfg/yolov3-tiny-416.cfg yolov3-tiny-416.weights </i> 
+* ./darknet detector map cfg/voc.data cfg/yolov3-tiny-416.cfg yolov3-tiny-416.weights 
 
 
-
+# Contact
+For any issues related to the code, you can contact me at <i>omais.shafi@gmail.com</i>
   
