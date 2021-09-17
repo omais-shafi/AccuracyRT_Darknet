@@ -1,7 +1,7 @@
 
 # Accuracy Calculation
 1. Open eval_yolov3.py inside the directory tensorrt_accuracy. <br>
-2. Give the path to the image dataset along with the annotations in json format(file attached in the folder).<br>
+2. Give the path to the image dataset(<i>large_data</i> folder of the google drive link) along with the annotations in json format(<i>traffic.json</i> file attached in the folder).<br>
 3. Run <i>python3 eval_yolov3.py --m model</i> (Here model is either tiny-yolo or yolo. Give the name of the trt engine generated above).<br>
 4. This will go through all the images and the annotations and will generate a file with the format .json. After it, the COCOeval of pycocotools will evaluate the json file and generate the summary of the results (Both precison and recall). The dummy screenshot of the output is attached.
  ![Accuracy_output](mdoutput.png)
@@ -14,7 +14,7 @@
 # Steps to obtain the accuracy for Darknet Models
 
 <h3> Command to obtain recall</h3>
- ./darknet detector recall fig3.data yolov3-tiny-416.cfg yolov3-tiny-416.weights (fig3.data contains the paths to the training and the test dataset which can be downloaded from the google drive link given)
+ ./darknet detector recall fig3.data yolov3-tiny-416.cfg yolov3-tiny-416.weights (fig3.data contains the paths to the training and the test dataset which can be downloaded from the google drive link given)<br>
  <br>
  <b>Note:</b><i> All the above files are present in the folder "Indian-Traffic-Dataset". Give the path of this folder when the darknet is to be run.</i>
 
@@ -23,7 +23,7 @@
 ./darknet detector map fig3.data yolov3-tiny-416.cfg yolov3-tiny-416.weights 
 
 
-# Dataset used in our evaluation
+<h3> Dataset used in our evaluation </h3>
 We use our custom traffic dataset for the evaluation. It can be found at https://drive.google.com/drive/folders/1AktwXwKcyJZnHcaFMl2jau92jIz8X9fo?usp=sharing
 
 # Contact
