@@ -1,5 +1,5 @@
 
-# Accuracy Calculation
+# Accuracy Calculation for TensorRT models
 1. Open eval_yolov3.py inside the directory tensorrt_accuracy. <br>
 2. Give the path to the image dataset(<i>large_data</i> folder of the google drive link) along with the annotations in json format(<i>traffic.json</i> file attached in the folder).<br>
 3. Run <i>python3 eval_yolov3.py --m model</i> (Here model is either tiny-yolo or yolo. Give the name of the trt engine generated above).<br>
@@ -11,7 +11,7 @@
  To obtain precision and recall at some fixed IOU(say 0.75), you can edit the <b>cocoeval.py</b> (Edit function Summarize in the file) file present in the system as pycocotools is installed. <i>cocoeval.py</i> is present at the location <i> ~/coco/PythonAPI/pycocotools/cocoeval.py</i> (Assuming the pycocotools is installed in the home directory)
 
 
-# Steps to obtain the accuracy for Darknet Models
+# Accuracy Calculation for Darknet Models
 * Download the folder from the google drive link. Make a directory with the name <i>data</i> and put the folder <i>large_data</i> inside it.
 
 <h3> Command to obtain recall</h3>
