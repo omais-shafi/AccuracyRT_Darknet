@@ -12,7 +12,7 @@
 
 
 # Steps to obtain the accuracy for Darknet Models
-* Download the folder from the google drive link. <i> mkdir data</i> and put the folder <i>large_data</i> inside it.
+* Download the folder from the google drive link. Make a directory with the name <i>data</i> and put the folder <i>large_data</i> inside it.
 
 <h3> Command to obtain recall</h3>
  ./darknet detector recall fig3.data yolov3-tiny-416.cfg yolov3-tiny-416.weights (fig3.data contains the paths to the training and the test dataset which can be downloaded from the google drive link given)<br>
