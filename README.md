@@ -21,9 +21,9 @@
 2. python3 PythonAPI/setup.py build_ext install 
 
 # Accuracy Calculation
-1. Open eval_yolo.py inside the directory tensorrt_accuracy. <br>
+1. Open eval_yolov3.py inside the directory tensorrt_accuracy. <br>
 2. Give the path to the image dataset along with the annotations in json format(format attached in the folder).<br>
-3. Run <i>python3 eval_yolo.py --m model</i> (Here model is either tiny-yolo or yolo. Give the name of the trt engine generated above).<br>
+3. Run <i>python3 eval_yolov3.py --m model</i> (Here model is either tiny-yolo or yolo. Give the name of the trt engine generated above).<br>
 4. This will go through all the images and the annotations and will generate a file with the format .json. After it, the COCOeval of pycocotools will evaluate the json file and generate the summary of the results (Both precison and recall). The dummy screenshot of the output is attached.
  ![Accuracy_output](mdoutput.png)
  5. Note that in order to get the precision and recall for individual classes, you need to specify the class in the code (<b>Line no 120 of eval_yolo.py</b>). This is the link to the code(https://github.com/cocodataset/cocoapi/blob/master/PythonAPI/pycocotools/cocoeval.py)<br>
