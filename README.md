@@ -10,8 +10,8 @@
 <b> 4. Tested on Ubuntu 18.04 and Python3 </b> <br>
 
 <h3> Steps to create the TensorRT engine</h3>
-1. Go to <i>cd tensorrt_accuracy/yolo </i> <br>
-2. Generate the onnx model from the weights and the cfg file( <i>python3 yolo_to_onnx.py</i>) <br>
+1. Go to <i>cd tensorrt_accuracy/yolov3_onnx </i> <br>
+2. Generate the onnx model from the weights and the cfg file( <i>python3 tinyYolov3_to_onnx.py</i>) <br>
 3. After the onnx is generated, run <i> python3 onnx_to_tensorrt.py --m yolov3-tiny-416</i>(The type of model can be changed inside the onnx_to_tensorrt.py file) <br>
 4. This will generate the model with trt extension.<br>
 
@@ -46,6 +46,8 @@
 ./darknet detector map cfg/voc.data cfg/yolov3-tiny-416.cfg yolov3-tiny-416.weights 
 
 
+# Dataset used in our evaluation
+We use our custom traffic dataset for the evaluation. It can be found at 
 # Contact
 For any issues related to the code, you can contact me at <i>omais.shafi@gmail.com</i>
   
