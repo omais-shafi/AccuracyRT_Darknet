@@ -15,7 +15,7 @@
 
 <h3> Command to obtain recall</h3>
  ./darknet detector recall fig3.data yolov3-tiny-416.cfg yolov3-tiny-416.weights (fig3.data contains the paths to the training and the test dataset which can be downloaded from the google drive link given)
- 
+ <br>
  <b>Note:</b><i> All the above files are present in the folder "Indian-Traffic-Dataset". Give the path of this folder when the darknet is to be run.</i>
 
 
