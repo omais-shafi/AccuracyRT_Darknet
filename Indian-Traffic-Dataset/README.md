@@ -20,7 +20,7 @@
 
 
 <h3> Command to obtain MAP </h3>
-./darknet detector map cfg/voc.data cfg/yolov3-tiny-416.cfg yolov3-tiny-416.weights 
+./darknet detector map fig3.data yolov3-tiny-416.cfg yolov3-tiny-416.weights 
 
 
 # Dataset used in our evaluation
